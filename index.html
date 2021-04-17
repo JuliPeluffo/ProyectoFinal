@@ -6,20 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Le Pain Quotidien</title>
-<!--Información-->
+<!--===== Favicon =====--> 
+    <link rel="icon" href="/assets/imagenes/favicon.ico" type="image">
+
+<!--===== Información =====-->
     <meta name="description" content= "Panadería/Restaurant. Nuestra idea es que puedas sentirte como en casa, aún estando fuera de ella." >
     <meta name="keywords" content="Restaurant, Panadería, Comida caludable, Vida sana, Masa madre">
 
-<!-- Favicon --> 
-    <link rel="icon" href="imagenes/favicon.ico" type="image">
-<!--Hojas de estilos Boostrap-->
-    <link href="boostrap/style_navbar.css" rel="stylesheet"> 
-    <!--Hojas de estilos propias-->
-    <link href="/scss/estilos.css" rel="estilos">
-</head>
+<!--===== Animate =====-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-<header>
-<!------Nav menu------->
+<!--===== Hojas de estilos Boostrap =====-->
+    <link href="/assets/boostrap/style_navbar_footer.css" rel="stylesheet">
+
+<!--===== Font Awesome iconos de Redes Sociales =====-->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<!--===== Hojas de estilos propias =====-->
+    <link href="/scss/estilos.css" rel="estilos">
+
+</head> <!--===== Cierre de head -->
+
+<!--===== Inicia el body =====-->
+<body>
+ <!--===== Inicia el header =====-->
+<header> 
+    <div class="container d-flex align-items-center">
+      <a href="index.html" class="logo mr-auto"><img src="assets/imagenes/logo_lpq.png" width="90px" alt="logo de la empresa" class="img-fluid"></a>
+<!--===== Nav menu==== -->
 <nav class="nav-menu d-none d-lg-block">
     <ul>
       <li><a href="index.html">Inicio</a></li>
@@ -28,12 +42,73 @@
       <li><a href="galeria.html">Galería</a></li>
       <li class="book-a-table text-center"><a href="reservas.html">Reservá una mesa</a></li>
     </ul>
-  </nav><!-- .nav-menu -->
+  </nav>
+
+<!--===== Cierre de header =====-->
 
 </header>
 
-<body>
-    <H1> ¡Le Pain Quotidien!
-    </H1>
+
+
+    <H1> ¡Le Pain Quotidien!</H1>
+
+
+
+
+
+
+
+<!--===== Footer  =====-->
+<footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Le Pain Quotidien</h3>
+              
+              <p>
+                Virrey Del Pino 4059 <br>
+                Buenos Aires, Argentina<br><br>
+                <strong>Celular:</strong> +54 1161896167<br>
+                <strong>Email:</strong> jpeluffo54@gmail.com<br>
+              </p>
+
+              <div class="social-links mt-3">
+                <a href="https://twitter.com/lpqar"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/LePainQuotidien"><i class="fab fa-facebook"></i></a> 
+                <a href="https://www.instagram.com/lepainquotidienar"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/le-pain-quotidien"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+         <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Si estás interesado en una franquicia dejanos tu e-mail</h4>
+            <p>Contamos con más de cinco locales franquicia en Buenos Aires</p>
+            <form action="" method="post">
+              <input placeholder="lpq@gmail.com" type="email" name="email"><input type="submit" value="Franquiciate">
+            </form>
+
+          </div>
+ 
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <a href="https://www.linkedin.com/in/julian-peluffo/"><strong> Peluffo Julián </strong></a>.  <br> Todos los derechos reservados. <br> Proyecto Final para Coder House
+      </div>
+ 
+    </div>
+  </footer>
+
+<!--===== Boostrap =====-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
