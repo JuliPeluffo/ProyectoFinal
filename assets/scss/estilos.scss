@@ -1,7 +1,7 @@
 $color_primario: #FFC310;
-
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
 * {
-    margin: 3px;
+    margin: 0px;
     padding:0px;
   }
 
@@ -9,10 +9,23 @@ body{
     background: url(/assets/imagenes/fondo1.jpg);
     background-size: cover;
 }
+.redesSociales{
+    font-size: 20px;
+    float: right;
+    margin-top: 25px;
+    a{
+    text-decoration: none; 
+    color: #fff;
+    :hover{
+        color:$color_primario
+    }
+    }
 
+}
+/*============NAVBAR============*/
 .menu{
     width: 100%;
-    background-color: rgba(34, 24, 24, 0.719);
+    background-color: rgba(0, 0, 0, 0.719);
     border-radius: 10px;
  ul{
      list-style: none;
@@ -22,22 +35,103 @@ body{
      
      li{
          display: inline-block;
-
-         a{
-             color: white;
-             text-decoration: none;
-             display: block;
-             padding: 5px;
-          }
-
+                  a{
+                    font-family: 'Quattrocento', serif;
+                    color: white;
+                     text-decoration: none;
+                      display: block;
+                     padding: 5px;
+                   }
      }
  }
-
- }
- .menu ul li a:hover{
-    background: $color_primario
 }
+
+ .menu ul li a:hover{
+    background: $color_primario;
+    border-radius: 5px;
+}
+
+.lpq{
+    background: $color_primario;
+       border-radius: 5px;
+    }
 .reservar{
+    background-color:#900C3F;
     float: right;
     margin-right: 30px;
+    text-decoration: underline;
+    border-radius: 5px;
+}
+.reservar:hover{
+    background-color: $color_primario;
+}
+
+/*============Footer============*/
+footer{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family: "open sans";
+    padding-top: 40px;
+    color: #fff;
+}
+.footer_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    h3{
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 3rem;
+    }
+    p{
+        max-width: 500px;
+        margin: 10px auto;
+        line-height: 28px;
+        font-size: 14px;
+    }
+}
+.footer_redes{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+         li{
+        margin: 0 10px
+         }
+         a{
+             text-decoration: none; 
+             color: #fff;
+             i{
+                font-size: 1.1rem;
+                transition: color .4s ease;
+             }
+         }
+    }
+.footer_redes a:hover i{
+    color:$color_primario
+}
+.footer_bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+    p{
+        font-size: 14px;
+        word-spacing: 2px;
+        text-transform: capitalize;
+    }
+    span{
+        text-transform: uppercase;
+        opacity: .4;
+        font-weight: 200;
+    }
 }
