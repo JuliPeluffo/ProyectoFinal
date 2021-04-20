@@ -9,10 +9,14 @@ body{
     background: url(/assets/imagenes/fondo1.jpg);
     background-size: cover;
 }
+.logo{
+    margin: 10px;
+    margin-top: 10px;
+}
 .redesSociales{
-    font-size: 20px;
+    font-size: 30px;
     float: right;
-    margin-top: 25px;
+    margin-top: 50px;
     a{
     text-decoration: none; 
     color: #fff;
@@ -45,7 +49,6 @@ body{
      }
  }
 }
-
  .menu ul li a:hover{
     background: $color_primario;
     border-radius: 5px;
@@ -66,7 +69,7 @@ body{
     background-color: $color_primario;
 }
 
-/*============Footer============*/
+ /*============Footer============*/
 footer{
     position: absolute;
     /*bottom: 0px;*/
@@ -121,7 +124,7 @@ footer{
 }
 .footer_bottom{
     background: #000;
-    width: 100vw;
+    width: 100%;
     padding: 20px 0;
     text-align: center;
     p{
@@ -133,5 +136,55 @@ footer{
         text-transform: uppercase;
         opacity: .4;
         font-weight: 200;
+    }
+}
+
+/*=====Index=======*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 30% 30% 20%;
+}
+
+.element1{
+    background: cyan;
+    grid-column: 1/3;
+}
+
+.element2{
+    background: #011013;
+    h2{
+        color: white;
+    }
+    a{
+        
+        color: white;
+    }
+}
+
+.element3{
+    background: blue;
+}
+
+.element4{
+    background: green;
+}
+
+.element5{
+    background: #011013;
+    h2{
+        color: white;
+    }
+    a{
+        color: white;
+    }
+}
+
+.element6{
+    background: #011013;
+    grid-column: 1/3;
+    a{
+        color: white;
     }
 }
