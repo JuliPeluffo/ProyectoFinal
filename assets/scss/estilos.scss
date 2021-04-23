@@ -225,7 +225,7 @@ footer{
         text-decoration: none;
     }
 }
-/*======Menu======*/
+/*======Productos======*/
 .flex_container{
     display: flex;
     padding: 5px;
@@ -240,3 +240,68 @@ footer{
     }
 }
 
+/*====Locales===*/
+
+.grid-locales {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: repeat 5(auto);
+    row-gap: 5px;
+    column-gap: 63px;
+}
+.locales1{
+    grid-column: 1/3;
+    grid-row: 1;
+    background-image: url(../imagenes/locales1.png);
+    padding: 280px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+.locales2{
+
+}
+.locales3{
+    background-image: url(../imagenes/locales2.png);
+    padding: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.locales4{
+
+}
+.locales5{
+    background-image: url(../imagenes/locales3.png);
+    padding: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+.locales6{
+
+}
+.locales7{
+    background-image: url(../imagenes/locales4.png);
+    padding: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+.locales8{
+    grid-column: 1/3;
+    grid-row: 5;
+    background-image: url(../imagenes/locales5.png);
+    padding: 280px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
