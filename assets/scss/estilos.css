@@ -2,78 +2,64 @@
 * {
   margin: 0px;
   padding: 0px;
-}
-
-body {
-  background: url(../imagenes/fondo1.jpg);
-  background-size: cover;
-}
-
-.logo {
-  margin: 10px;
-  margin-top: 10px;
-}
-
-.redesSociales {
-  font-size: 30px;
-  float: right;
-  margin-top: 50px;
-}
-
-.redesSociales a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.redesSociales a :hover {
-  color: #FFC310;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /*============NAVBAR============*/
-.menu {
+header {
+  position: fixed;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.719);
-  border-radius: 10px;
+  background: #ffffff1c;
+  z-index: 100;
 }
 
-.menu ul {
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   list-style: none;
-  padding: 0px;
-  margin: 0px;
 }
 
-.menu ul li {
-  display: inline-block;
-}
-
-.menu ul li a {
-  font-family: 'Quattrocento', serif;
-  color: white;
-  text-decoration: none;
+li a {
   display: block;
-  padding: 5px;
+  text-decoration: none;
+  font-size: 1.2em;
+  -webkit-transition: .3s;
+  transition: .3s;
+  margin-top: 20px;
 }
 
-.menu ul li a:hover {
-  background: #FFC310;
-  border-radius: 5px;
+nav {
+  background: #ffffff1c;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
 }
 
-.selector {
-  background: #FFC310;
-  border-radius: 5px;
+nav ul {
+  width: 100%;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
-.reservar {
-  background-color: #900C3F;
-  float: right;
-  margin-right: 30px;
-  text-decoration: underline;
-  border-radius: 5px;
+nav li a {
+  color: #FFC310;
 }
 
-.reservar:hover {
-  background-color: #FFC310;
+nav ul li a:hover {
+  color: white;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.logo:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 /*============Footer============*/
@@ -212,13 +198,14 @@ footer {
 }
 
 .element2 {
-  background: #011013;
+  background: #00151a;
   padding: 100px;
 }
 
 .element2 h2 {
   color: #FFC310;
   font-size: 60px;
+  text-align: center;
 }
 
 .element2 p {
@@ -233,14 +220,14 @@ footer {
 }
 
 .element4 {
-  background-image: url(../imagenes/polloA.jpg);
+  background-image: url(../imagenes/cuenco.jpg);
   background-size: cover;
   padding: 240px;
   background-position: center;
 }
 
 .element5 {
-  background: #011013;
+  background: #00151a;
   padding: 140px;
 }
 
@@ -277,5 +264,27 @@ footer {
   text-align: center;
   font-size: 20px;
   text-decoration: none;
+}
+
+/*======Menu======*/
+.flex_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.column {
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  padding: 5px;
+  margin-top: 100px;
+}
+
+.column img {
+  margin-top: 5px;
 }
 /*# sourceMappingURL=estilos.css.map */
