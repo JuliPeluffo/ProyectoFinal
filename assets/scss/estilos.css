@@ -1,4 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Quattrocento&display=swap");
+.element1, .fondo_productos, .locales1, .historia1, .fondo_reservas {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  padding: 280px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.element1 h1, .fondo_productos h1, .locales1 h1, .historia1 h1, .fondo_reservas h1 {
+  color: #FFC310;
+  text-align: center;
+  font-size: 70px;
+  word-spacing: 10px;
+}
+
+.element1 p, .fondo_productos p, .locales1 p, .historia1 p, .fondo_reservas p {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  word-spacing: 0px;
+}
+
+.element2 h2, .element5 h2, .element6 h2, .locales2 h2, .locales5 h2, .locales6 h2, .historia2 h2, .historia5 h2, .historia6 h2 {
+  color: #FFC310;
+  font-size: 60px;
+  text-align: center;
+}
+
+.element2 p, .element5 p, .element6 p, .locales2 p, .locales5 p, .locales6 p, .historia2 p, .historia5 p, .historia6 p {
+  color: white;
+  font-size: 20px;
+}
+
+.locales3, .locales4, .locales7, .historia3, .historia4, .historia7 {
+  padding: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -170,47 +216,12 @@ footer {
 }
 
 .element1 {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1/3;
-  -ms-grid-row: 1;
-  grid-row: 1;
   background-image: url(../imagenes/comunal.png);
-  padding: 280px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-.element1 h1 {
-  color: #FFC310;
-  text-align: center;
-  font-size: 70px;
-  word-spacing: 10px;
-}
-
-.element1 p {
-  color: white;
-  text-align: center;
-  font-size: 25px;
-  word-spacing: 0px;
 }
 
 .element2 {
   background: #00151a;
   padding: 100px;
-}
-
-.element2 h2 {
-  color: #FFC310;
-  font-size: 60px;
-  text-align: center;
-}
-
-.element2 p {
-  color: white;
-  font-size: 20px;
 }
 
 .element3 {
@@ -231,18 +242,6 @@ footer {
   padding: 140px;
 }
 
-.element5 h2 {
-  color: #FFC310;
-  font-size: 50px;
-  text-align: center;
-}
-
-.element5 p {
-  color: white;
-  text-align: center;
-  font-size: 20px;
-}
-
 .element6 {
   background-image: url(../imagenes/exterior.png);
   -ms-grid-column: 1;
@@ -253,41 +252,9 @@ footer {
   background-repeat: no-repeat;
 }
 
-.element6 h2 {
-  color: #FFC310;
-  font-size: 60px;
-  text-align: center;
-}
-
-.element6 p {
-  color: white;
-  text-align: center;
-  font-size: 20px;
-  text-decoration: none;
-}
-
 /*======Productos======*/
 .fondo_productos {
   background-image: url(../imagenes/productos.png);
-  padding: 280px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-.fondo_productos h1 {
-  color: #FFC310;
-  text-align: center;
-  font-size: 70px;
-  word-spacing: 10px;
-}
-
-.fondo_productos p {
-  color: white;
-  text-align: center;
-  font-size: 25px;
-  word-spacing: 0px;
 }
 
 .flex_container {
@@ -328,31 +295,7 @@ footer {
 }
 
 .locales1 {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1/3;
-  -ms-grid-row: 1;
-  grid-row: 1;
   background-image: url(../imagenes/locales1.png);
-  padding: 280px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-.locales1 h1 {
-  color: #FFC310;
-  text-align: center;
-  font-size: 70px;
-  word-spacing: 10px;
-}
-
-.locales1 p {
-  color: white;
-  text-align: center;
-  font-size: 25px;
-  word-spacing: 0px;
 }
 
 .locales2 {
@@ -360,33 +303,12 @@ footer {
   padding: 50px;
 }
 
-.locales2 h2 {
-  color: #FFC310;
-  font-size: 60px;
-  text-align: center;
-}
-
-.locales2 p {
-  color: white;
-  font-size: 20px;
-}
-
 .locales3 {
   background-image: url(../imagenes/locales2.png);
-  padding: 200px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
 }
 
 .locales4 {
   background-image: url(../imagenes/locales3.jpg);
-  padding: 200px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
 }
 
 .locales5 {
@@ -394,41 +316,13 @@ footer {
   padding: 50px;
 }
 
-.locales5 h2 {
-  color: #FFC310;
-  font-size: 60px;
-  text-align: center;
-}
-
-.locales5 p {
-  color: white;
-  font-size: 20px;
-}
-
 .locales6 {
   background: #00151a;
   padding: 50px;
 }
 
-.locales6 h2 {
-  color: #FFC310;
-  font-size: 60px;
-  text-align: center;
-}
-
-.locales6 p {
-  color: white;
-  font-size: 20px;
-  text-align: center;
-}
-
 .locales7 {
   background-image: url(../imagenes/locales4.png);
-  padding: 200px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
 }
 
 .locales8 {
@@ -459,7 +353,7 @@ footer {
   word-spacing: 0px;
 }
 
-/*======Productos======*/
+/*======Historia======*/
 .grid_historia {
   display: -ms-grid;
   display: grid;
@@ -470,31 +364,7 @@ footer {
 }
 
 .historia1 {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1/3;
-  -ms-grid-row: 1;
-  grid-row: 1;
   background-image: url(../imagenes/historia.png);
-  padding: 280px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-.historia1 h1 {
-  color: #FFC310;
-  text-align: center;
-  font-size: 70px;
-  word-spacing: 10px;
-}
-
-.historia1 p {
-  color: white;
-  text-align: center;
-  font-size: 25px;
-  word-spacing: 0px;
 }
 
 .historia2 {
@@ -502,27 +372,12 @@ footer {
   padding: 100px;
 }
 
-.historia2 h2 {
-  color: #FFC310;
-  font-size: 60px;
-  text-align: center;
-}
-
-.historia2 p {
-  color: white;
-  font-size: 20px;
-}
-
 .historia3 {
   background-image: url(../imagenes/historia2.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .historia4 {
   background-image: url(../imagenes/historia3.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .historia5 {
@@ -530,36 +385,16 @@ footer {
   padding: 100px;
 }
 
-.historia5 h2 {
-  color: #FFC310;
-  font-size: 60px;
-  text-align: center;
-}
-
-.historia5 p {
-  color: white;
-  font-size: 20px;
-}
-
 .historia6 {
   background: #00151a;
   padding: 100px;
 }
 
-.historia6 h2 {
-  color: #FFC310;
-  font-size: 60px;
-  text-align: center;
-}
-
-.historia6 p {
-  color: white;
-  font-size: 20px;
-}
-
 .historia7 {
   background-image: url(../imagenes/historia4.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+}
+
+.fondo_reservas {
+  background-image: url(../imagenes/mesas.png);
 }
 /*# sourceMappingURL=estilos.css.map */
