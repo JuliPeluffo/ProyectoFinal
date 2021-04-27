@@ -34,7 +34,7 @@ li a {
 }
 
 nav {
-  background: #ffffff1c;
+  background: #ffffff60;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
@@ -267,6 +267,29 @@ footer {
 }
 
 /*======Productos======*/
+.fondo_productos {
+  background-image: url(../imagenes/productos.png);
+  padding: 280px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.fondo_productos h1 {
+  color: #FFC310;
+  text-align: center;
+  font-size: 70px;
+  word-spacing: 10px;
+}
+
+.fondo_productos p {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  word-spacing: 0px;
+}
+
 .flex_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -274,6 +297,7 @@ footer {
   padding: 5px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background-color: #00151a;
 }
 
 .column {
@@ -288,17 +312,19 @@ footer {
   margin-top: 5px;
 }
 
+.column img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
 /*====Locales===*/
 .grid-locales {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 40% 60%;
-      grid-template-columns: 40% 60%;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
   -ms-grid-rows: repeat 5 auto;
       grid-template-rows: repeat 5 auto;
-  row-gap: 5px;
-  -webkit-column-gap: 63px;
-          column-gap: 63px;
 }
 
 .locales1 {
@@ -315,6 +341,36 @@ footer {
   position: relative;
 }
 
+.locales1 h1 {
+  color: #FFC310;
+  text-align: center;
+  font-size: 70px;
+  word-spacing: 10px;
+}
+
+.locales1 p {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  word-spacing: 0px;
+}
+
+.locales2 {
+  background: #00151a;
+  padding: 50px;
+}
+
+.locales2 h2 {
+  color: #FFC310;
+  font-size: 60px;
+  text-align: center;
+}
+
+.locales2 p {
+  color: white;
+  font-size: 20px;
+}
+
 .locales3 {
   background-image: url(../imagenes/locales2.png);
   padding: 200px;
@@ -324,13 +380,46 @@ footer {
   position: relative;
 }
 
-.locales5 {
-  background-image: url(../imagenes/locales3.png);
+.locales4 {
+  background-image: url(../imagenes/locales3.jpg);
   padding: 200px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+}
+
+.locales5 {
+  background: #00151a;
+  padding: 50px;
+}
+
+.locales5 h2 {
+  color: #FFC310;
+  font-size: 60px;
+  text-align: center;
+}
+
+.locales5 p {
+  color: white;
+  font-size: 20px;
+}
+
+.locales6 {
+  background: #00151a;
+  padding: 50px;
+}
+
+.locales6 h2 {
+  color: #FFC310;
+  font-size: 60px;
+  text-align: center;
+}
+
+.locales6 p {
+  color: white;
+  font-size: 20px;
+  text-align: center;
 }
 
 .locales7 {
@@ -354,5 +443,123 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+}
+
+.locales8 h2 {
+  color: #FFC310;
+  text-align: center;
+  font-size: 70px;
+  word-spacing: 10px;
+}
+
+.locales8 p {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  word-spacing: 0px;
+}
+
+/*======Productos======*/
+.grid_historia {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: auto auto auto auto;
+      grid-template-rows: auto auto auto auto;
+}
+
+.historia1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  background-image: url(../imagenes/historia.png);
+  padding: 280px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.historia1 h1 {
+  color: #FFC310;
+  text-align: center;
+  font-size: 70px;
+  word-spacing: 10px;
+}
+
+.historia1 p {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  word-spacing: 0px;
+}
+
+.historia2 {
+  background: #00151a;
+  padding: 100px;
+}
+
+.historia2 h2 {
+  color: #FFC310;
+  font-size: 60px;
+  text-align: center;
+}
+
+.historia2 p {
+  color: white;
+  font-size: 20px;
+}
+
+.historia3 {
+  background-image: url(../imagenes/historia2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.historia4 {
+  background-image: url(../imagenes/historia3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.historia5 {
+  background: #00151a;
+  padding: 100px;
+}
+
+.historia5 h2 {
+  color: #FFC310;
+  font-size: 60px;
+  text-align: center;
+}
+
+.historia5 p {
+  color: white;
+  font-size: 20px;
+}
+
+.historia6 {
+  background: #00151a;
+  padding: 100px;
+}
+
+.historia6 h2 {
+  color: #FFC310;
+  font-size: 60px;
+  text-align: center;
+}
+
+.historia6 p {
+  color: white;
+  font-size: 20px;
+}
+
+.historia7 {
+  background-image: url(../imagenes/historia4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=estilos.css.map */

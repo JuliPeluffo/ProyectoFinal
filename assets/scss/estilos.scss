@@ -33,7 +33,7 @@ li{
     }
 }
 nav{
-    background: #ffffff1c;
+    background: #ffffff60;
     position: sticky ;
     top:0px;
     z-index: 10;
@@ -226,10 +226,34 @@ footer{
     }
 }
 /*======Productos======*/
+
+.fondo_productos{
+    background-image: url(../imagenes/productos.png);
+    padding: 280px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    h1{
+        color: $color_primario;
+        text-align: center;
+        font-size: 70px;
+        word-spacing: 10px;
+    }
+    p{
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        word-spacing: 0px;
+    }
+
+}
+
 .flex_container{
     display: flex;
     padding: 5px;
     flex-wrap: wrap;
+    background-color: $color_secudario;
 }
 .column{
     flex: 25%;
@@ -237,18 +261,20 @@ footer{
     margin-top: 100px;
     img{
         margin-top: 5px;
+        
     }
 }
-
+.column img:hover{
+    transform: scale(1.5);
+}
 /*====Locales===*/
 
 .grid-locales {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: repeat 5(auto);
-    row-gap: 5px;
-    column-gap: 63px;
 }
+
 .locales1{
     grid-column: 1/3;
     grid-row: 1;
@@ -258,11 +284,35 @@ footer{
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    h1{
+        color: $color_primario;
+        text-align: center;
+        font-size: 70px;
+        word-spacing: 10px;
+    }
+    p{
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        word-spacing: 0px;
+    }
 
 }
 .locales2{
-
+    background: $color_secudario;
+    padding: 50px;
+    h2{
+        color: $color_primario;
+        font-size: 60px;
+        text-align: center;
+    }
+    p{
+      color: white;
+      font-size: 20px;
+    }
 }
+
+
 .locales3{
     background-image: url(../imagenes/locales2.png);
     padding: 200px;
@@ -271,21 +321,45 @@ footer{
     background-repeat: no-repeat;
     position: relative;
 }
-.locales4{
 
-}
-.locales5{
-    background-image: url(../imagenes/locales3.png);
+.locales4{
+    background-image: url(../imagenes/locales3.jpg);
     padding: 200px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-
 }
+
+.locales5{
+    background: $color_secudario;
+    padding: 50px;
+    h2{
+        color: $color_primario;
+        font-size: 60px;
+        text-align: center;
+    }
+    p{
+      color: white;
+      font-size: 20px;
+    }
+}
+
 .locales6{
+    background: $color_secudario;
+    padding: 50px;
+    h2{
+        color: $color_primario;
+        font-size: 60px;
+        text-align: center;
+    }
+    p{
+      color: white;
+      font-size: 20px;
+      text-align: center;
+    }
+   }
 
-}
 .locales7{
     background-image: url(../imagenes/locales4.png);
     padding: 200px;
@@ -304,4 +378,108 @@ footer{
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    h2{
+        color: $color_primario;
+        text-align: center;
+        font-size: 70px;
+        word-spacing: 10px;
+    }
+    p{
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        word-spacing: 0px;
+    }
+}
+
+/*======Productos======*/
+
+.grid_historia{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows:auto auto auto auto
+}
+
+.historia1{
+    grid-column: 1/3;
+    grid-row: 1;
+    background-image: url(../imagenes/historia.png);
+    padding: 280px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    h1{
+        color: $color_primario;
+        text-align: center;
+        font-size: 70px;
+        word-spacing: 10px;
+    }
+    p{
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        word-spacing: 0px;
+    }
+}
+
+.historia2{
+    background: $color_secudario;
+    padding: 100px;
+    h2{
+        color: $color_primario;
+        font-size: 60px;
+        text-align: center;
+    }
+    p{
+      color: white;
+      font-size: 20px;
+    }
+    
+}
+
+.historia3{
+    background-image:url(../imagenes/historia2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.historia4{
+    background-image:url(../imagenes/historia3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.historia5{
+    background: $color_secudario;
+    padding: 100px;
+    h2{
+        color: $color_primario;
+        font-size: 60px;
+        text-align: center;
+    }
+    p{
+      color: white;
+      font-size: 20px;
+    }
+}
+
+.historia6{
+    background: $color_secudario;
+    padding: 100px;
+    h2{
+        color: $color_primario;
+        font-size: 60px;
+        text-align: center;
+    }
+    p{
+      color: white;
+      font-size: 20px;
+    }
+}
+.historia7{
+    background-image:url(../imagenes/historia4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
