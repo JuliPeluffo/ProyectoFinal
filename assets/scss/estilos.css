@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Quattrocento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 .element1, .fondo_productos, .locales1, .historia1, .fondo_reservas {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -17,6 +17,7 @@
   text-align: center;
   font-size: 70px;
   word-spacing: 10px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .element1 p, .fondo_productos p, .locales1 p, .historia1 p, .fondo_reservas p {
@@ -24,17 +25,20 @@
   text-align: center;
   font-size: 25px;
   word-spacing: 0px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .element2 h2, .element5 h2, .element6 h2, .locales2 h2, .locales5 h2, .locales6 h2, .historia2 h2, .historia5 h2, .historia6 h2 {
   color: #FFC310;
   font-size: 60px;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .element2 p, .element5 p, .element6 p, .locales2 p, .locales5 p, .locales6 p, .historia2 p, .historia5 p, .historia6 p {
   color: white;
   font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .locales3, .locales4, .locales7, .historia3, .historia4, .historia7 {
