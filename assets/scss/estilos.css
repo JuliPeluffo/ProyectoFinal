@@ -398,7 +398,19 @@ footer {
   background-image: url(../imagenes/historia4.png);
 }
 
+/*=========Reservas=======*/
 .fondo_reservas {
   background-image: url(../imagenes/mesas.png);
+}
+
+.fondo_reservas .protocolo {
+  color: #FFC310;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.fondo_form {
+  background-color: rgba(255, 255, 255, 0.199);
 }
 /*# sourceMappingURL=estilos.css.map */

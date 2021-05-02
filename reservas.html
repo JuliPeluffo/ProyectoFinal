@@ -22,7 +22,6 @@
 
 <!--==========Bootstrap======-->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
 <!--===== Hojas de estilos propias =====-->
 <link href="assets/scss/estilos.css" rel="stylesheet" > <!--Cambiar de carpeta antes de entregar-->
 
@@ -53,11 +52,74 @@
 
 <!--===== Reservas =====-->
 
-
 <div class="fondo_reservas">
     <h1>Reservá tu mesa</h1>
-    <p>Completá el siguiente formulario para generar tu reserva</p>
+    <p class="protocolo">Las mesas tienen capacidad para un máximo de cinco personas según los protocolos correspondientes por el virus Covid-19</p>
+    <p>Completá el siguiente formulario para generar tu reserva.</p> 
+
+<!--===== Forulario =====-->
+  <div class="fondo_form">  
+    <form class="row g-3">
+      <div class="col-md-4">
+        <label for="validationDefault01" class="form-label">Nombre y Apellido</label> <!--===== Nombre =====-->
+        <input type="text" class="form-control" id="validationDefault01" placeholder="Nombre completo" required>
+      </div>
+      <div class="col-md-6">
+        <label for="validationDefault03" class="form-label">Número de contacto</label> <!--=====Celular =====-->
+        <input type="text" class="form-control" id="validationDefault03" placeholder="Número de celular" required>
+      </div>
+      <div class="col-md-4">
+        <label for="validationDefault06" class="form-label">E-mail</label> <!--===== E-mail =====-->
+        <input type="text" class="form-control" id="validationDefault02" placeholder="email@ejemplo.com" required>
+      </div>
+      <div class="col-md-3">
+        <label for="validationDefault04" class="form-label">Seleccioná una fecha</label> <!--===== Fechas =====-->
+        <select class="form-select" id="validationDefault04" required>
+          <option selected disabled value="">Fechas disponibles</option>
+          <option>11/05/2021</option>
+          <option>12/05/2021</option>
+          <option>13/05/2021</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <label for="validationDefault04" class="form-label">Seleccioná el local</label> <!--===== Local Dropdown =====-->
+        <select class="form-select" id="validationDefault04" required>
+          <option selected disabled value="">Local</option>
+          <option>Belgrano (Jose Mariscal de Sucre 2151)</option>
+          <option>Nordelta (Av de los Lagos 6660)</option>
+          <option>Plaza Serrano (Armenia 1641)</option>
+          <option>Palermo (Salguero 3075)</option>
+          <option>Barrio Norte (Posadas 1402)</option>
+        </select>
+      </div> 
+      <a>Horario</a>  <!--===== Horario Checkbox =====-->
+      <div class="col-md-4">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" required>
+        <label class="form-check-label" for="inlineRadio1">Mañana (08:00h a 12:00h)</label>
+      </div>
+      <div class="col-md-4">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" required>
+        <label class="form-check-label" for="inlineRadio2">Mediodía (12:00h a 16:00h)</label>
+      </div>
+      <div class="col-md-4">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" required>
+        <label class="form-check-label" for="inlineRadio3">Noche (16:00h a 20:00h)</label>
+      </div>
+      <div class="col-12">
+        <div class="form-check"> <!--======Validación=======-->
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+          <label class="form-check-label" for="invalidCheck2">
+            <a>Me comprometo a asistir a mi reserva y cumplir los protocolos de higiene.</a>
+          </label>
+        </div>
+      </div>
+      <div class="col-12"> <!--======Botón enviar=======-->
+        <button class="btn btn-primary" type="submit">Enviar Reserva</button>
+      </div>
+    </form>
+  </div>
 </div>
+
 
 
 <!--===== Footer  =====-->
@@ -70,14 +132,14 @@
         <strong>Email:</strong> jpeluffo54@gmail.com
         </p>
               <ul class="footer_redes">
-                  <li><a href="https://twitter.com/lpqar"><i class="fab fa-twitter"></i></a></li>
-                  <li><a href="https://www.facebook.com/LePainQuotidien"><i class="fab fa-facebook"></i></a></li>
-                  <li><a href="https://www.instagram.com/lepainquotidienar"><i class="fab fa-instagram"></i></a></li>
-                  <li><a href="https://www.linkedin.com/company/le-pain-quotidien"><i class="fab fa-linkedin-in"></i></a></li>
+                  <li><a href="https://twitter.com/lpqar" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="https://www.facebook.com/LePainQuotidien" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                  <li><a href="https://www.instagram.com/lepainquotidienar" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="https://www.linkedin.com/company/le-pain-quotidien" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
               </ul>
        </div>
        <div class="footer_bottom">
-           &copy; Copyright <a href="https://www.linkedin.com/in/julian-peluffo/"><strong> Peluffo Julián </strong></a>.  <br> Todos los derechos reservados. <br> Proyecto Final para Coder House
+           &copy; Copyright <a href="https://www.linkedin.com/in/julian-peluffo/" target="_blank"><strong> Peluffo Julián </strong></a>.  <br> Todos los derechos reservados. <br> Proyecto Final para Coder House
         </div>
        </div>
 
@@ -93,6 +155,8 @@
 
 <!--===========Bootstrap=====-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 </body>
 
 </html>

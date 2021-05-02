@@ -446,6 +446,8 @@ footer{
 
 }
 
+/*=========Reservas=======*/
+
 .fondo_reservas{
     @extend %info_principal;
     background-image: url(../imagenes/mesas.png);
@@ -455,4 +457,13 @@ footer{
     p{
         @extend %p_principal;
     }
+    .protocolo{
+        color: $color_primario;
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+.fondo_form{
+    background-color: rgba(255, 255, 255, 0.199);
 }
