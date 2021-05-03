@@ -5,7 +5,7 @@
   grid-column: 1/3;
   -ms-grid-row: 1;
   grid-row: 1;
-  padding: 280px;
+  padding: 200px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -81,6 +81,7 @@ li a {
   -webkit-transition: .3s;
   transition: .3s;
   margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 nav {
@@ -115,7 +116,6 @@ nav ul li a:hover {
 /*============Footer============*/
 footer {
   position: absolute;
-  /*bottom: 0px;*/
   left: 0px;
   right: 0px;
   background: #111;
@@ -180,14 +180,9 @@ footer {
   color: #fff;
 }
 
-.footer_redes a i {
-  font-size: 1.1rem;
-  -webkit-transition: color .4s ease;
-  transition: color .4s ease;
-}
-
-.footer_redes a:hover i {
-  color: #FFC310;
+ul li a:hover {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
 }
 
 .footer_bottom {
