@@ -217,10 +217,10 @@ ul li a:hover{
     background: $color_secundario;
     padding: 140px;
     h2{
-        @extend %cuadro_h2
+        @extend %cuadro_h2;
     }
     p{
-        @extend %cuadro_p
+        @extend %cuadro_p;
     }
 }
 
@@ -249,7 +249,7 @@ ul li a:hover{
         @extend %h1_principal;
     }
     p{
-        @extend %p_principal
+        @extend %p_principal;
     }
 
 }
@@ -465,14 +465,15 @@ ul li a:hover{
     background-color: rgba(255, 255, 255, 0.596);
 }
 
-/*Responsive*/
+/*Código Responsive*/
 
 /*IPAD*/
-@media screen and (max-width:1024px)and(min-width:480px){
-
+// @media screen and (max-width:1024px)and(min-width:768px){
+@media screen and (max-width:768px){
     /*Navbar*/
     header{
         position:absolute;
+
     }
     ul{
         justify-content: space-around;
@@ -525,7 +526,6 @@ ul li a:hover{
     .historia3{
         grid-column: 1;
         grid-row: 3;
-        padding: 240px;
     }
     .historia4{
         grid-column: 1;
@@ -583,9 +583,177 @@ ul li a:hover{
     grid-row: 8;
     padding: 200px;
 }
-/*Reservas*/
-.fondo_form{
-    padding: auto;
 }
 
+/*=========Celular genérico==========*/
+@media screen and (max-width:480px){
+
+    /*Navbar*/
+
+    header{
+        position:absolute;
+    }
+    ul{
+        justify-content: space-around;
+        
+    }
+
+    /*INDEX*/
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        justify-content: center;
+        text-align: center;
+        overflow-x: hidden;
+    }
+    .element1{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .element2{
+        grid-column: 1;
+        grid-row: 2;
+        justify-content: center;
+        text-align: center;
+        padding: 200px;
+        overflow-x: hidden;
+    }
+    .element3{
+        grid-column: 1;
+        grid-row: 3;
+        padding: 300px;
+        overflow-x: hidden;
+    }
+    .element4{
+        grid-column: 1;
+        grid-row: 5;
+        overflow-x: hidden;
+    }
+    .element5{
+        grid-column: 1;
+        grid-row: 4;
+        overflow-x: hidden;
+    }
+    .element6{
+        grid-column: 1;
+        grid-row: 6;
+        overflow-x: hidden;
+    }
+
+    /*NOSOTROS*/
+
+    .grid_historia{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows:auto auto auto auto auto auto auto;
+        justify-content: center;
+        text-align: center;
+        overflow-x: hidden;
+    }
+    .historia1{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .historia2{
+        grid-column: 1;
+        grid-row: 2;
+        padding:200px;
+    }
+    .historia3{
+        grid-column: 1;
+        grid-row: 3;
+    }    
+    .historia4{
+        grid-column: 1;
+        grid-row: 5;
+    }
+    .historia5{
+        grid-column: 1;
+        grid-row: 4;
+        padding:200px;
+    }
+    .historia6{
+        grid-column: 1;
+        grid-row: 6;
+        padding:200px;
+    }    
+    .historia7{
+        grid-column: 1;
+        grid-row: 7;
+    }
+    /*Locales*/
+
+.grid-locales{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows:auto auto auto auto auto auto auto auto;
+    justify-content: center;
+    text-align: center;
+    overflow-x: hidden;
 }
+.locales1{
+    grid-column: 1/2;
+    grid-row: 1;
+}
+.locales2{
+    grid-column: 1/2;
+    grid-row: 2;
+    justify-content: center;
+    text-align: center;
+    padding:200px;
+}
+.locales3{
+    grid-column: 1/2;
+    grid-row: 3;
+    padding: 240px;
+}
+.locales4{
+    grid-column: 1/2;
+    grid-row: 5;
+}
+.locales5{
+    grid-column: 1/2;
+    grid-row: 4;
+    padding:200px;
+}
+.locales6{
+    grid-column: 1/2;
+    grid-row: 6;
+    padding:200px;
+}    
+.locales7{
+    grid-column: 1;
+    grid-row: 7;
+}
+.locales8{
+    grid-column: 1;
+    grid-row: 8;
+    padding: 200px;
+}
+    /*=======Reservas=======*/
+.fondo_reservas{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        text-align: center;
+        overflow-x: hidden;
+}
+.fondo_form{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    text-align: center;
+    overflow-x: hidden;
+}
+/*=====Productos=====*/
+.fondo_productos{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    text-align: center;
+    overflow-x: hidden;
+}
+}
+
