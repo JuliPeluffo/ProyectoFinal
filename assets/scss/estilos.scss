@@ -272,6 +272,14 @@ ul li a:hover{
 .column img:hover{
     transform: scale(1.5);
 }
+.sugerencia_productos{
+    background-color: $color_secundario;
+    h2{
+        color: white;
+        text-align: center;
+        padding-top: 40px;
+    }
+}
 /*====Locales===*/
 
 .grid-locales {
@@ -542,28 +550,28 @@ ul li a:hover{
     grid-template-rows:auto auto auto auto auto auto auto auto;
 }
 .locales1{
-    grid-column: 1;
+    grid-column: 1/2;
     grid-row: 1;
 }
 .locales2{
-    grid-column: 1;
+    grid-column: 1/2;
     grid-row: 2;
 }
 .locales3{
-    grid-column: 1;
+    grid-column: 1/2;
     grid-row: 3;
     padding: 240px;
 }
 .locales4{
-    grid-column: 1;
+    grid-column: 1/2;
     grid-row: 5;
 }
 .locales5{
-    grid-column: 1;
+    grid-column: 1/2;
     grid-row: 4;
 }
 .locales6{
-    grid-column: 1;
+    grid-column: 1/2;
     grid-row: 6;
 }    
 .locales7{
@@ -573,5 +581,11 @@ ul li a:hover{
 .locales8{
     grid-column: 1;
     grid-row: 8;
+    padding: 200px;
 }
+/*Reservas*/
+.fondo_form{
+    padding: auto;
+}
+
 }

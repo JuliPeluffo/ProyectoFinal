@@ -283,6 +283,16 @@ ul li a:hover {
           transform: scale(1.5);
 }
 
+.sugerencia_productos {
+  background-color: #00151a;
+}
+
+.sugerencia_productos h2 {
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+}
+
 /*====Locales===*/
 .grid-locales {
   display: -ms-grid;
@@ -529,38 +539,44 @@ ul li a:hover {
   }
   .locales1 {
     -ms-grid-column: 1;
-    grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
     -ms-grid-row: 1;
     grid-row: 1;
   }
   .locales2 {
     -ms-grid-column: 1;
-    grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
     -ms-grid-row: 2;
     grid-row: 2;
   }
   .locales3 {
     -ms-grid-column: 1;
-    grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
     -ms-grid-row: 3;
     grid-row: 3;
     padding: 240px;
   }
   .locales4 {
     -ms-grid-column: 1;
-    grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
     -ms-grid-row: 5;
     grid-row: 5;
   }
   .locales5 {
     -ms-grid-column: 1;
-    grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
     -ms-grid-row: 4;
     grid-row: 4;
   }
   .locales6 {
     -ms-grid-column: 1;
-    grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
     -ms-grid-row: 6;
     grid-row: 6;
   }
@@ -575,6 +591,11 @@ ul li a:hover {
     grid-column: 1;
     -ms-grid-row: 8;
     grid-row: 8;
+    padding: 200px;
+  }
+  /*Reservas*/
+  .fondo_form {
+    padding: auto;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
