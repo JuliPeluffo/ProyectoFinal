@@ -27,6 +27,7 @@
   font-size: 25px;
   word-spacing: 0px;
   font-family: 'Montserrat', sans-serif;
+  margin-top: 10px;
 }
 
 .element2 h2, .element5 h2, .element6 h2, .locales2 h2, .locales5 h2, .locales6 h2, .historia2 h2, .historia5 h2, .historia6 h2 {
@@ -40,6 +41,7 @@
   color: white;
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
+  margin-top: 10px;
 }
 
 .locales3, .locales4, .locales7, .historia3, .historia4, .historia7 {
@@ -421,7 +423,7 @@ ul li a:hover {
 }
 
 /*Código Responsive*/
-/*IPAD*/
+/*=========== IPAD 768x1024 ===========*/
 @media screen and (max-width: 768px) {
   /*Navbar*/
   header {
@@ -595,15 +597,22 @@ ul li a:hover {
   }
 }
 
-/*=========Celular genérico==========*/
+/*=========Small Tablet 480x640 ==========*/
 @media screen and (max-width: 480px) {
   /*Navbar*/
   header {
     position: absolute;
   }
-  ul {
+  header ul {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   /*INDEX*/
   .grid-container {
@@ -624,6 +633,9 @@ ul li a:hover {
     grid-column: 1;
     -ms-grid-row: 1;
     grid-row: 1;
+  }
+  .element1 h1 {
+    margin-top: 75px;
   }
   .element2 {
     -ms-grid-column: 1;
@@ -666,6 +678,10 @@ ul li a:hover {
     grid-row: 6;
     overflow-x: hidden;
   }
+  /*Productos*/
+  .fondo_productos h1 {
+    margin-top: 75px;
+  }
   /*NOSOTROS*/
   .grid_historia {
     display: -ms-grid;
@@ -685,6 +701,9 @@ ul li a:hover {
     grid-column: 1;
     -ms-grid-row: 1;
     grid-row: 1;
+  }
+  .historia1 h1 {
+    margin-top: 75px;
   }
   .historia2 {
     -ms-grid-column: 1;
@@ -745,6 +764,9 @@ ul li a:hover {
     grid-column: 1/2;
     -ms-grid-row: 1;
     grid-row: 1;
+  }
+  .locales1 h1 {
+    margin-top: 75px;
   }
   .locales2 {
     -ms-grid-column: 1;
@@ -813,6 +835,9 @@ ul li a:hover {
             justify-content: center;
     text-align: center;
     overflow-x: hidden;
+  }
+  .fondo_reservas h1 {
+    margin-top: 75px;
   }
   .fondo_form {
     display: -ms-grid;

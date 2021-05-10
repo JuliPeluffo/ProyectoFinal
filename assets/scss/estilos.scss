@@ -24,6 +24,7 @@ position: relative;
     font-size: 25px;
     word-spacing: 0px;
     font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
 }
 
 %cuadro_h2{ 
@@ -36,6 +37,7 @@ position: relative;
     color: white;
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
 }
 
 %cuadro_foto{
@@ -467,8 +469,7 @@ ul li a:hover{
 
 /*Código Responsive*/
 
-/*IPAD*/
-// @media screen and (max-width:1024px)and(min-width:768px){
+/*=========== IPAD 768x1024 ===========*/
 @media screen and (max-width:768px){
     /*Navbar*/
     header{
@@ -585,17 +586,18 @@ ul li a:hover{
 }
 }
 
-/*=========Celular genérico==========*/
+/*=========Small Tablet 480x640 ==========*/
 @media screen and (max-width:480px){
 
     /*Navbar*/
 
     header{
         position:absolute;
-    }
-    ul{
-        justify-content: space-around;
-        
+        ul{
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     /*INDEX*/
@@ -611,6 +613,9 @@ ul li a:hover{
     .element1{
         grid-column: 1;
         grid-row: 1;
+        h1{
+            margin-top: 75px;
+        }
     }
     .element2{
         grid-column: 1;
@@ -642,7 +647,14 @@ ul li a:hover{
         overflow-x: hidden;
     }
 
-    /*NOSOTROS*/
+/*Productos*/
+.fondo_productos{
+    h1{
+        margin-top: 75px;
+    }
+}
+
+/*NOSOTROS*/
 
     .grid_historia{
         display: grid;
@@ -655,6 +667,9 @@ ul li a:hover{
     .historia1{
         grid-column: 1;
         grid-row: 1;
+        h1{
+            margin-top: 75px;
+        }
     }
     .historia2{
         grid-column: 1;
@@ -683,7 +698,8 @@ ul li a:hover{
         grid-column: 1;
         grid-row: 7;
     }
-    /*Locales*/
+
+/*Locales*/
 
 .grid-locales{
     display: grid;
@@ -696,6 +712,9 @@ ul li a:hover{
 .locales1{
     grid-column: 1/2;
     grid-row: 1;
+    h1{
+        margin-top: 75px;
+    }
 }
 .locales2{
     grid-column: 1/2;
@@ -732,13 +751,18 @@ ul li a:hover{
     grid-row: 8;
     padding: 200px;
 }
-    /*=======Reservas=======*/
+
+/*=======Reservas=======*/
+
 .fondo_reservas{
         display: grid;
         grid-template-columns: auto;
         justify-content: center;
         text-align: center;
         overflow-x: hidden;
+        h1{
+            margin-top: 75px;
+        }
 }
 .fondo_form{
     display: grid;
@@ -748,6 +772,7 @@ ul li a:hover{
     overflow-x: hidden;
 }
 /*=====Productos=====*/
+
 .fondo_productos{
     display: grid;
     grid-template-columns: auto;
